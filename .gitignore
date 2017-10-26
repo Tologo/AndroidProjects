@@ -1,0 +1,14 @@
+# Directorios .gradle
+.gradle/
+# Directorios build
+build/
+# Ficheros cuyo nombre sea local.properties
+local.properties
+# Ficheros cuyo nombre sea workspace.xml
+workspace.xml
+# Directorios libraries/
+libraries/
+# En el video no se especifica nada más, por lo que comento las últimas entradas y se dejan sin ignorar*
+#*.iml
+#/captures
+#.externalNativeBuild
