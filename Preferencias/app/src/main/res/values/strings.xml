@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Preferencias</string>
+
+    <string name="button_text">Guardar preferencias</string>
+    <string name="recuperados">Los valores recuperados mediante Preferencias son:</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_mostrar_preferencias">MostrarPreferencias</string>
+</resources>
