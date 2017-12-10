@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SQLiteProject</string>
+    <string name="txtAlumno">Datos de un alumno</string>
+    <string name="txtProfesor">Datos de un profesor</string>
+</resources>

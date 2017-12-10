@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Opciones" />
+
+    <Button
+        android:id="@+id/btnIrAlumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblAlumno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Pantalla de datos de Alumno" />
+
+    <Button
+        android:id="@+id/btnIrProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIrAlumno"
+        android:layout_centerHorizontal="true"
+        android:text="Pantalla de datos de Profesor" />
+
+    <TextView
+        android:id="@+id/txtConsultas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnIrProfesor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Consultas Predeterminadas" />
+
+    <Button
+        android:id="@+id/btnTodos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtConsultas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Muestra todos los profesores y alumnos" />
+
+
+</RelativeLayout>

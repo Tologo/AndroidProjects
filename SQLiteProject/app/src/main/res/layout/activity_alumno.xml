@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Alumno">
+
+<TableLayout
+    android:id="@+id/tableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:layout_gravity="center"
+    >
+
+    <TableRow
+        android:id="@+id/tableRow0"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="18dp"
+            android:text="Datos del Alumno"
+            android:gravity="center"
+            android:layout_span="6"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtNombreA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre" />
+        <EditText
+            android:id="@+id/nombreA"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:inputType="text"
+            android:hint="Escribe tu nombre"
+        />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/txtEdadA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edad" />
+
+        <EditText
+        android:id="@+id/edadA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:inputType="text"
+        android:hint="Escribe tu edad"
+        />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/txtCicloA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ciclo" />
+        <EditText
+            android:id="@+id/cicloA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:inputType="text"
+            android:hint="A qué ciclo perteneces?"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/txtCursoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Curso" />
+        <EditText
+            android:id="@+id/cursoA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:inputType="text"
+            android:hint="En qué curso estás?"
+            />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/txtNota"
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:text="Nota media" />
+        <EditText
+            android:id="@+id/notaA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:inputType="text"
+            android:hint="Cual es tu nota media?"
+            />
+    </TableRow>
+
+</TableLayout>
+
+    <Button
+        android:id="@+id/btnGuardaA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="51dp"
+        android:text="Guardar datos del Alumno" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnGuardaA"
+        android:layout_below="@+id/btnGuardaA"
+        android:layout_marginEnd="45dp"
+        android:text="Volver a Inicio" />
+
+    <Button
+        android:id="@+id/btnTodosA"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnVolver"
+        android:text="Todos los alumnos" />
+
+    <Button
+        android:id="@+id/btnAciclo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnTodosA"
+        android:text="Alumnos del ciclo indicado" />
+
+    <Button
+        android:id="@+id/btnAcurso"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnAciclo"
+        android:text="Alumnos del curso indicado" />
+
+    <Button
+        android:id="@+id/btnACiCu"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnAcurso"
+        android:text="Alumnos del ciclo y curso indicado" />
+
+</RelativeLayout>
