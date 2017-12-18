@@ -7,21 +7,20 @@
     tools:context="com.tologo.project03Fragment.MainActivity"
     android:orientation="vertical">
 
-    <ImageView
+    <TextView
+        android:id="@+id/txtTituloMenu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="5"
-        app:srcCompat="@drawable/balon9"
-        android:id="@+id/imageView"
-        android:background="@color/colorPrimaryDark"/>
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="10pt"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="Menú de opciones" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/miRecyclerView"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/imageView"
-        android:layout_alignParentEnd="true"
         android:scrollbars="vertical"
         />
 
