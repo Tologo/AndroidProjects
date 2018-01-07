@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ModificaProducto">
+
+    <TextView
+        android:id="@+id/lblModificaP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/lblModificaP"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnProductosUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblModificaP"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lblDatosP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/spnProductosUsuario"
+        android:layout_marginTop="15dp"
+        android:text="@string/lblDatosP"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:layout_below="@+id/lblDatosP"
+        android:layout_gravity="center"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtNombreP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre" />
+            <EditText
+                android:id="@+id/editNombreP"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Nombre del producto"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtDescripcion"
+                android:layout_width="21dp"
+                android:layout_height="wrap_content"
+                android:text="Descripción" />
+
+            <EditText
+                android:id="@+id/editDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Descripción del producto"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoría" />
+            <EditText
+                android:id="@+id/editCategoría"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Categoría del producto"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precio" />
+            <EditText
+                android:id="@+id/editPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Precio del producto"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/txtKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="12dp"
+        android:layout_below="@+id/tableLayout1"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/btnActualizaProducto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/tableLayout1"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/btnActualizaProducto" />
+
+    <Button
+        android:id="@+id/btnEliminaProducto"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/btnActualizaProducto"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/btnEliminaProducto" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignStart="@+id/btnActualizaProducto"
+        android:layout_below="@+id/btnEliminaProducto"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/btnInicio" />
+
+</RelativeLayout>

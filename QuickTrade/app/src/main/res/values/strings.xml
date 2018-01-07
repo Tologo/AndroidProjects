@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">QuickTrade</string>
+    <string name="txtOpciones">Opciones de usuario</string>
+    <string name="txtProductos">Opciones de Productos</string>
+    <string name="txtModifica">Indica el usuario que quieres modificar</string>
+    <string name="lblModificaP">Indica el producto que quieres modificar</string>
+    <string name="lblDatosP">Características del producto seleccionado</string>
+    <string name="btnNewUser">Introducir nuevo usuario</string>
+    <string name="btnNewProducto">Introducir nuevo producto</string>
+    <string name="btnVerUsers">Mostrar usuarios registrados</string>
+    <string name="btnVerProductosUsuario">Mostrar productos del usuario</string>
+    <string name="btnVerProductosCategoria">Filtrar productos por categoría</string>
+    <string name="btnModifProductos">Modificar datos de productos</string>
+    <string name="btnModifUser">Modificar datos de usuario</string>
+    <string name="txtNewUser">Introduce los datos del nuevo usuario</string>
+    <string name="txtNewProducto">Introduce los datos del nuevo producto</string>
+    <string name="btnGuardaUser">Guardar datos del Usuario</string>
+    <string name="btnGuardaProducto">Guardar datos del Producto</string>
+    <string name="btnRecuperaUser">Recupera los datos de Usuario</string>
+    <string name="btnRecuperaProducto">Recupera los datos de Producto</string>
+    <string name="btnActualizaUser">Actualiza los datos de Usuario</string>
+    <string name="btnActualizaProducto">Actualiza los datos del Producto</string>
+    <string name="btnEliminaProducto">Elimina el Producto</string>
+    <string name="btnInicio">Volver al menú de opciones</string>
+    <string name="btnCerrar">Cerrar sesión de Usuario</string>
+    <string name="txtConsulta">Usuarios registrados en la aplicación</string>
+    <string name="txtConsultaProdUsua">Productos registrados por el usuario activo</string>
+    <string name="btnRegistrar">Registrar Usuario</string>
+    <string name="btnLogin">Iniciar sesión</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="lblFiltrado">Selecciona una categoría de producto</string>
+    <string name="lblProdFiltrados">Productos que pertenecen a la categoría indicada</string>
+
+    <!-- Nodos Firebase -->
+    <string name="nodo_ppal">usuarios</string>
+    <string name="nodo_productos">productos</string>
+
+    <!-- Campos de los nodos -->
+    <string name="campo_nick">nick</string>
+    <string name="campo_correo">correo</string>
+    <string name="campo_nombre">nombre</string>
+    <string name="campo_direccion">direccion</string>
+
+    <string name="campo_usuarioP">usuario</string>
+    <string name="campo_nombreP">nombre</string>
+    <string name="campo_descripcionP">descripcion</string>
+    <string name="campo_categoriaP">categoria</string>
+    <string name="campo_precioP">precio</string>
+
+
+</resources>

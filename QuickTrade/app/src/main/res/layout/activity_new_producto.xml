@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".NewProducto">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:layout_gravity="center"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewNewProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="18dp"
+                android:text="@string/txtNewProducto"
+                android:gravity="center"
+                android:layout_span="6"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="5dp"
+                android:text="Nombre" />
+            <EditText
+                android:id="@+id/editNombreP"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Escribe el nombre del producto"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal">
+
+            <TextView
+                android:id="@+id/txtDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="5dp"
+                android:text="Descripción" />
+
+            <EditText
+                android:id="@+id/editDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:hint="Aporta una descripción del producto"
+                android:inputType="textPersonName"
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtCategoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="5dp"
+                android:text="Categoría" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rdgCategoria">
+
+                    <RadioButton
+                        android:id="@+id/rdbOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tecnología"/>
+                    <RadioButton
+                        android:id="@+id/rdbTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Coches"/>
+                    <RadioButton
+                        android:id="@+id/rdbThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hogar"/>
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="5dp"
+                android:text="Precio" />
+            <EditText
+                android:id="@+id/editPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Indica el precio del producto"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnGuardaProducto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/btnGuardaProducto" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnGuardaProducto"
+        android:layout_below="@+id/btnGuardaProducto"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/btnInicio" />
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".NewUser">
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:layout_gravity="center"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewNewUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textSize="18dp"
+                android:text="@string/txtNewUser"
+                android:gravity="center"
+                android:layout_span="6"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nick" />
+            <EditText
+                android:id="@+id/editNick"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Escribe tu nombre de usuario"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo" />
+
+            <EditText
+                android:id="@+id/editCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Escribe tu correo electrónico"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre" />
+            <EditText
+                android:id="@+id/editNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Introduce tu nombre completo"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección" />
+            <EditText
+                android:id="@+id/editDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Indica una dirección de contacto"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnGuardaUser"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/btnGuardaUser" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnGuardaUser"
+        android:layout_below="@+id/btnGuardaUser"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/btnInicio" />
+
+</RelativeLayout>
