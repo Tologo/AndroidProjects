@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tologo.project04.MainActivity"
+    android:orientation="horizontal">
+
+    <!-- Definición del Fragment estático con las opciones de menú -->
+
+    <!-- Definición del Fragment dinámico para mostrar el contenido de las opciones de menú -->
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/contenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <fragment
+            android:id="@+id/list_fragment"
+            android:name="com.tologo.project04.MenuFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            tools:layout="@layout/fragment_menu" />
+    </FrameLayout>
+
+</LinearLayout>

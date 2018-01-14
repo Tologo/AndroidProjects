@@ -1,0 +1,17 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameLayoutDinam"
+    tools:context="com.tologo.project04.FragmentDinamico">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/contenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment"
+        android:gravity="fill_vertical|center_horizontal"
+        android:textSize="50sp"/>
+
+</FrameLayout>
