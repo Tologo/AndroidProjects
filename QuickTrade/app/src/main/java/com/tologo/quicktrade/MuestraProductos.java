@@ -66,24 +66,14 @@ public class MuestraProductos extends AppCompatActivity {
                 }
                 adaptador = new ArrayAdapter<String>(MuestraProductos.this,android.R.layout.simple_list_item_1,listado);
                 lstProductos.setAdapter(adaptador);
-            }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
-
-
-        // Establecemos la acción a realizar al seleccionar un ítem del listView
-                lstProductos.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+                lstProductos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                     @Override
-                    public void onItemClick(AdapterView<?> parentView, View view, int position, long id) {
-                        // Obtenemos el nombre del ítem seleccionado
-                        String selected = parentView.getItemAtPosition(position).toString();
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        String selectedItem = (String) parent.getItemAtPosition(position);
 
                         // Hacemos una selección del producto según el nombre seleccionado
-                        Query qProductoSeleccionado = bbdd.orderByChild("nombre").equalTo(selected);
+                        Query qProductoSeleccionado = bbdd.orderByChild("nombre").equalTo(selectedItem);
 
                         // A partir de la selección anterior consultamos y rellenamos el ArrayList
                         qProductoSeleccionado.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -92,12 +82,13 @@ public class MuestraProductos extends AppCompatActivity {
                             public void onDataChange(DataSnapshot dataSnapshot) {
 
                                 // Recuperamos el nodo de producto buscado que hay dentro de Productos (la referencia en la BBDD)
-                                for(DataSnapshot datasnapshot: dataSnapshot.getChildren()) {
+                                for (DataSnapshot datasnapshot : dataSnapshot.getChildren()) {
                                     String key = datasnapshot.getKey();
                                     Producto producto = datasnapshot.getValue(Producto.class);
+                                    String prodName = producto.getNombre().toString();
 
                                     // Creamos un nuevo objeto Favorito con los datos del formulario
-                                    Favorito f = new Favorito(usuario, producto);
+                                    Favorito f = new Favorito(usuario, prodName);
                                     // Generamos una nueva clave para incorporar un nodo en la BBDD
                                     String clave = bbdd2.push().getKey();
                                     // Ahora añadimos a la referencia el nuevo producto
@@ -113,11 +104,24 @@ public class MuestraProductos extends AppCompatActivity {
                             public void onCancelled(DatabaseError databaseError) {
                                 Toast.makeText(MuestraProductos.this, "Hay algún problema con este producto", Toast.LENGTH_LONG).show();
                             }
+
+
                         });
 
-            }
+                    }
 
+            });
+
+          }
+
+
+
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
+
+             }
         });
-
     }
+
 }
+

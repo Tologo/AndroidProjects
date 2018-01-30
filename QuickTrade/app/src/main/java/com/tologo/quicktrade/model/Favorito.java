@@ -11,7 +11,7 @@ public class Favorito {
     private String producto;
 
     // Definimos un constructor por defecto para no tener problemas a la hora de 'refrescar' la bbdd en Firebase
-    public Favorito(String usuario, Producto producto){
+    public Favorito(){
 
     }
 

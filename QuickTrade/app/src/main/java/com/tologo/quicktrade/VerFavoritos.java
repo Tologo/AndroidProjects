@@ -13,6 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+import com.tologo.quicktrade.model.Favorito;
 import com.tologo.quicktrade.model.Producto;
 
 import java.util.ArrayList;
@@ -37,7 +38,7 @@ public class VerFavoritos extends AppCompatActivity {
 
         // Esto nos devuelve la referencia de la BBDD con la que nos hemos conectado
         bbdd = FirebaseDatabase.getInstance().getReference(getString(R.string.nodo_favoritos));
-        // Es importante finalizar con el parámetro 'productos' puesto que será el nodo sobre el que se crearán 'hijos' o consultas
+        // Es importante finalizar con el parámetro 'favoritos' puesto que será el nodo sobre el que se crearán 'hijos' o consultas
 
         // Hacemos una selección de los productos del usuario activo
         Query qProductos = bbdd.orderByChild("usuario").equalTo(user.getUid());
@@ -55,9 +56,9 @@ public class VerFavoritos extends AppCompatActivity {
 
                 // Recuperamos los nodos de producto que hay dentro de Productos (la referencia en la BBDD)
                 for(DataSnapshot datasnapshot: dataSnapshot.getChildren()) {
-                    Producto producto = datasnapshot.getValue(Producto.class);
+                    Favorito favorito = datasnapshot.getValue(Favorito.class);
 
-                    String prod = producto.toString();
+                    String prod = favorito.getProducto().toString();
                     listado.add(prod);
 
                 }
