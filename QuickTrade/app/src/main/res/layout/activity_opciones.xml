@@ -17,7 +17,7 @@
     <Button
         android:id="@+id/btnNuevoUsuario"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_below="@+id/lblAlumno"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
@@ -28,7 +28,7 @@
     <Button
         android:id="@+id/btnTodosUsuarios"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_below="@+id/btnNuevoUsuario"
         android:layout_margin="2dp"
         android:layout_centerHorizontal="true"
@@ -38,7 +38,7 @@
     <Button
         android:id="@+id/btnModificaUsuario"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/btnTodosUsuarios"
         android:layout_margin="2dp"
@@ -48,27 +48,37 @@
     <Button
         android:id="@+id/btnCerrarSesion"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_below="@+id/btnModificaUsuario"
         android:layout_margin="2dp"
         android:layout_centerHorizontal="true"
         android:background="@drawable/borde_redondo"
         android:text="@string/btnCerrar" />
 
+    <Button
+        android:id="@+id/btnVerFavoritos"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnCerrarSesion"
+        android:layout_margin="2dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/btnFavoritos" />
+
     <TextView
         android:id="@+id/lblProductos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnCerrarSesion"
+        android:layout_below="@+id/btnVerFavoritos"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
+        android:layout_marginTop="10dp"
         android:text="@string/txtProductos"
         android:textSize="20sp" />
 
     <Button
         android:id="@+id/buttonNewProducto"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_below="@+id/lblProductos"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
@@ -78,7 +88,7 @@
     <Button
         android:id="@+id/buttonVerProductosUsuario"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/buttonNewProducto"
         android:layout_margin="2dp"
@@ -88,7 +98,7 @@
     <Button
         android:id="@+id/buttonVerProductosCategoria"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/buttonVerProductosUsuario"
         android:layout_margin="2dp"
@@ -98,11 +108,22 @@
     <Button
         android:id="@+id/buttonModifProductos"
         android:layout_width="275dp"
-        android:layout_height="40dp"
+        android:layout_height="35dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/buttonVerProductosCategoria"
         android:layout_margin="2dp"
         android:background="@drawable/borde_redondo"
         android:text="@string/btnModifProductos" />
+
+    <Button
+        android:id="@+id/buttonMuestraProductos"
+        android:layout_width="275dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/buttonModifProductos"
+        android:layout_margin="2dp"
+        android:background="@drawable/borde_redondo"
+        android:text="@string/txtMuestraProd" />
+
 
 </RelativeLayout>

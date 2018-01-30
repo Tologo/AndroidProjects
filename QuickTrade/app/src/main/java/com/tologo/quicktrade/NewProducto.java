@@ -56,7 +56,7 @@ public class NewProducto extends AppCompatActivity {
         // Accedemos al usuario activo
         user = FirebaseAuth.getInstance().getCurrentUser();
 
-        // Generamos un listener de Button para guardar un usuario
+        // Generamos un listener de Button para guardar un producto
         anyadir.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -98,7 +98,7 @@ public class NewProducto extends AppCompatActivity {
                                             Producto p = new Producto(usuario, nombre, descripcion, categoria, precio);
                                             // Generamos una nueva clave para incorporar un nodo en la BBDD
                                             String clave = bbdd.push().getKey();
-                                            // Ahora añadimos a la referencia el nuevo usuario
+                                            // Ahora añadimos a la referencia el nuevo producto
                                             bbdd.child(clave).setValue(p);
 
                                             Toast.makeText(NewProducto.this, "Producto añadido", Toast.LENGTH_LONG).show();

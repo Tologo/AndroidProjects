@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
     Button btn_login;
 
     private FirebaseAuth mAuth;
-    private FirebaseAuth.AuthStateListener mAuthListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -131,23 +130,6 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 });
-
-        /* Definimos la acción que ocurre una vez que la app detecta que hay un usuario
-        // correctamente autenticado. Nos envía a la Activity de Opciones
-        mAuthListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                // Vamos a programar nuestra llamada al Activity de Opciones
-                if (mAuth.getCurrentUser() != null) {
-                    Intent llamada = new Intent(MainActivity.this, Opciones.class);
-                    startActivity(llamada);
-                } else {
-                    Toast.makeText(MainActivity.this, "Ningún usuario autenticado",
-                            Toast.LENGTH_SHORT).show();
-                }
-            }
-
-        };*/
 
     }
 

@@ -97,5 +97,25 @@ public class Opciones extends AppCompatActivity {
             }
         });
 
+        // Generamos un listener de Button para llegar a la Activity de mostrar todos los productos
+        final Button button9 = (Button) findViewById(R.id.buttonMuestraProductos);
+        button9.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Vamos a programar nuestra llamada a la segunda ventana
+                Intent llamada = new Intent(Opciones.this, MuestraProductos.class);
+                startActivity(llamada);
+            }
+        });
+
+        // Generamos un listener de Button para llegar a la Activity de mostrar todos los productos
+        final Button button10 = (Button) findViewById(R.id.btnVerFavoritos);
+        button10.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Vamos a programar nuestra llamada a la segunda ventana
+                Intent llamada = new Intent(Opciones.this, VerFavoritos.class);
+                startActivity(llamada);
+            }
+        });
+
     }
 }

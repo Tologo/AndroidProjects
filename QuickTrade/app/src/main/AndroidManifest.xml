@@ -23,7 +23,9 @@
         <activity android:name=".NewProducto" />
         <activity android:name=".VerProductosUsuario" />
         <activity android:name=".FiltradoProductosCategoria" />
-        <activity android:name=".ModificaProducto"></activity>
+        <activity android:name=".ModificaProducto" />
+        <activity android:name=".MuestraProductos" />
+        <activity android:name=".VerFavoritos"></activity>
     </application>
 
 </manifest>

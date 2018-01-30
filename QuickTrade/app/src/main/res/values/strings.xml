@@ -23,7 +23,11 @@
     <string name="btnEliminaProducto">Elimina el Producto</string>
     <string name="btnInicio">Volver al menú de opciones</string>
     <string name="btnCerrar">Cerrar sesión de Usuario</string>
+    <string name="btnFavoritos">Ver productos favoritos</string>
     <string name="txtConsulta">Usuarios registrados en la aplicación</string>
+    <string name="txtConsultaProd">Productos registrados en la aplicación</string>
+    <string name="txtConsultaFavoritos">Productos favoritos del usuario</string>
+    <string name="txtMuestraProd">Muestra todos los productos</string>
     <string name="txtConsultaProdUsua">Productos registrados por el usuario activo</string>
     <string name="btnRegistrar">Registrar Usuario</string>
     <string name="btnLogin">Iniciar sesión</string>
@@ -35,6 +39,7 @@
     <!-- Nodos Firebase -->
     <string name="nodo_ppal">usuarios</string>
     <string name="nodo_productos">productos</string>
+    <string name="nodo_favoritos">favoritos</string>
 
     <!-- Campos de los nodos -->
     <string name="campo_nick">nick</string>
@@ -47,6 +52,9 @@
     <string name="campo_descripcionP">descripcion</string>
     <string name="campo_categoriaP">categoria</string>
     <string name="campo_precioP">precio</string>
+
+    <string name="campo_favoritoU">usuario</string>
+    <string name="campo_favoritoP">producto</string>
 
 
 </resources>

@@ -1,5 +1,9 @@
 package com.tologo.quicktrade.model;
 
+import android.app.Activity;
+
+import java.util.ArrayList;
+
 /**
  * Created by Tologo on 12/12/2017.
  */
@@ -57,6 +61,7 @@ public class Usuario {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
 
     // Generamos un método toString
     @Override
