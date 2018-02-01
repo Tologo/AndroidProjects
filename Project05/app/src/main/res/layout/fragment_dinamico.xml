@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frameLayoutDinam"
+    tools:context="com.tologo.project05.FragmentDinamico">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/frcontenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff001e"
+        android:gravity="fill_vertical|center_horizontal"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="50sp" />
+
+</LinearLayout>

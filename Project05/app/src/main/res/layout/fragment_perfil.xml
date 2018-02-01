@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66ff00"
+    android:orientation="vertical"
+    tools:context="com.tologo.project05.PerfilFragment">
+
+    <TextView
+        android:id="@+id/txtTituloMenu"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/lblTituloPerfil"
+        android:textSize="10pt"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="70sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtTituloMenu"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/lblnombre"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewNick"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextNick"
+        android:layout_alignBottom="@+id/editTextNick"
+        android:layout_alignStart="@+id/textViewNombre"
+        android:text="@string/lblNick"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonGuPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textViewNick"
+        android:layout_below="@+id/editTextNick"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/btnGuardarPerfil" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewNombre"
+        android:layout_alignBottom="@+id/textViewNombre"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textViewNombre"
+        android:hint="@string/hintNombre" />
+
+    <EditText
+        android:id="@+id/editTextNick"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTextNombre"
+        android:layout_below="@+id/editTextNombre"
+        android:ems="10"
+        android:hint="@string/hintNick"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

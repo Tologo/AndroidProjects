@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Project05</string>
+
+    <string name="hello_blank_fragment">Hello gamers</string>
+    <string name="fragmentEstaticoTitulo">Menú de opciones</string>
+    <string name="lblTituloPerfil">Opciones de perfil</string>
+    <string name="lblnombre">Nombre</string>
+    <string name="lblNick">Nick</string>
+    <string name="btnGuardarPerfil">Guardar datos de perfil</string>
+    <string name="hintNombre">Indica tu nombre</string>
+    <string name="hintNick">Escoge un nick</string>
+    <string name="lblJuegoJugadorBienvenida">Bienvenido Jugador: </string>
+    <string name="txtInvitado">Guest</string>
+    <string name="lblPuntos">Puntos: </string>
+    <string name="txtViewPuntosDefault">0</string>
+</resources>
