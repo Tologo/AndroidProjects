@@ -5,8 +5,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tologo.project05.MainActivity"
-    android:orientation="horizontal"
-    android:id="@+id/layoutMain">
+    android:orientation="vertical"
+    android:id="@+id/layoutMain1">
+
+    <!-- Definición del Toolbar -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/layoutMain">
 
     <!-- Definición del Fragment estático con las opciones de menú -->
     <fragment
@@ -24,5 +41,7 @@
         android:layout_height="match_parent"
         android:layout_weight="1">
     </FrameLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

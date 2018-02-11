@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="@string/perfil"
+        />
+    <item android:id="@+id/juego"
+        android:icon="@drawable/ic_juego"
+        android:title="@string/juego"
+        />
+    <item android:id="@+id/menuCamara"
+        android:icon="@drawable/ic_instrucciones"
+        android:title="@string/camara"
+        />
+    <item android:id="@+id/menuMapa"
+        android:icon="@drawable/ic_informacion"
+        android:title="@string/mapa"
+        />
+</menu>

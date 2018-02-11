@@ -13,4 +13,11 @@
     <string name="txtInvitado">Guest</string>
     <string name="lblPuntos">Puntos: </string>
     <string name="txtViewPuntosDefault">0</string>
+    <string name="perfil">Perfil</string>
+    <string name="juego">Juego</string>
+    <string name="instrucciones">Instrucciones</string>
+    <string name="informacion">Información</string>
+    <string name="mapa">Localización</string>
+    <string name="camara">Cámara</string>
+    <string name="buttonCamera">Saca una foto</string>
 </resources>
