@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Fragments.FragmentProyecto">
+
+    <TextView
+        android:id="@+id/txtProyecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:typeface="serif"
+        android:textSize="18dp"
+        android:text="Proyecto"
+        android:gravity="center"
+        android:layout_span="6"/>
+
+    <EditText
+        android:id="@+id/editProyecto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtProyecto"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="Escribe el nombre del proyecto" />
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editProyecto"
+        android:layout_span="6"
+        android:gravity="center"
+        android:text="Fecha"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/editFechaProy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFecha"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:hint="Escribe la fecha" />
+
+    <Button
+        android:id="@+id/btnGuardaProyecto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editFechaProy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Guarda" />
+
+</RelativeLayout>

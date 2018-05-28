@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "75095575216",
+    "firebase_url": "https://energynotes-1fafb.firebaseio.com",
+    "project_id": "energynotes-1fafb",
+    "storage_bucket": "energynotes-1fafb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75095575216:android:b51c2121baf1a32b",
+        "android_client_info": {
+          "package_name": "com.tologo.energynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75095575216-e2l9d78lcrh45goa97l41i835o5va4uo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tologo.energynotes",
+            "certificate_hash": "436eb94d2272de3ad74ce9019dbe7aaef85a623a"
+          }
+        },
+        {
+          "client_id": "75095575216-su8u2068mb30ls2em5b62242dmma8bd3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtuVslhrriXMWZQGrwvQTVjMFHRKbLirw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75095575216-su8u2068mb30ls2em5b62242dmma8bd3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

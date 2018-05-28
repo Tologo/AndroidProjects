@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        tools:context=".Fragments.FragmentDatosGenerales">
+
+
+        <TextView
+            android:id="@+id/lblFiltrado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/lblFiltrado" />
+
+        <Spinner
+            android:id="@+id/spinnerPr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/lblFiltrado"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            />
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPr"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:layout_gravity="center"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow0"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/textViewNewProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="6"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:text="@string/txtDatosGenerales"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txtEdificio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:layout_marginRight="3dp"
+                android:textSize="12dp"
+                android:text="Edificio" />
+            <EditText
+                android:id="@+id/editNombreEdif"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Escribe el nombre del edificio"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal">
+
+            <TextView
+                android:id="@+id/txtDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textSize="12dp"
+                android:layout_marginRight="3dp"
+                android:text="Dirección" />
+
+            <EditText
+                android:id="@+id/editDireccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Aporta una dirección del inmueble"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtLocalidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textSize="12dp"
+                android:layout_marginRight="3dp"
+                android:text="Localidad" />
+
+            <EditText
+                android:id="@+id/editLocalidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Indica la localidad del inmueble"
+                android:inputType="text"
+                android:textSize="12dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtCodigoPostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textSize="12dp"
+                android:layout_marginRight="3dp"
+                android:text="Código Postal" />
+            <EditText
+                android:id="@+id/editCodigoPostal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Indica el código postal"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtReferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textSize="12dp"
+                android:layout_marginRight="3dp"
+                android:text="Ref. Catastral" />
+            <EditText
+                android:id="@+id/editReferencia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Aporta la referencia catastral"
+                />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/txtFechaConst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textEnd"
+                android:textSize="12dp"
+                android:layout_marginRight="3dp"
+                android:text="Fecha de construcción" />
+            <EditText
+                android:id="@+id/editFechaConst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:inputType="text"
+                android:hint="Indica la fecha de construcción del bloque"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/editProyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:textSize="12dp"
+        android:inputType="text"
+        android:visibility="invisible"
+        />
+
+    <Button
+        android:id="@+id/btnGuardaDatos"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:text="Guarda" />
+
+    <Button
+        android:id="@+id/btnRecuperaDatos"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnGuardaDatos"
+        android:layout_centerHorizontal="true"
+        android:text="Recupera" />
+
+    <Button
+        android:id="@+id/btnActualizaDatos"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignEnd="@+id/spinnerPr"
+        android:layout_alignTop="@+id/btnGuardaDatos"
+        android:text="Actualiza" />
+
+    </RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_proyecto"
+            android:icon="@drawable/ic_work_black_24dp"
+            android:title="Nuevo proyecto" />
+        <item
+            android:id="@+id/nav_generales"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Datos generales" />
+        <item
+            android:id="@+id/nav_cliente"
+            android:icon="@drawable/ic_account_circle_black_24dp"
+            android:title="Datos del cliente" />
+    </group>
+
+    <item android:title="Icorporar mediciones">
+        <menu>
+            <item
+                android:id="@+id/nav_fachada"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Fachadas" />
+            <item
+                android:id="@+id/nav_hueco"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Huecos" />
+            <item
+                android:id="@+id/nav_altura"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Alturas" />
+            <item
+                android:id="@+id/nav_acs"
+                android:icon="@drawable/ic_menu_send"
+                android:title="ACS" />
+            <item
+                android:id="@+id/nav_aire"
+                android:icon="@drawable/ic_menu_send"
+                android:title="A/C" />
+        </menu>
+    </item>
+
+</menu>

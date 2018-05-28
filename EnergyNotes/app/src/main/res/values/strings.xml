@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">EnergyNotes</string>
+
+    <!-- MainActivity - Registro de usuarios -->
+    <string name="btnRegistrar">Registrar Usuario</string>
+    <string name="btnLogin">Iniciar sesión</string>
+    <string name="email">Email</string>
+    <string name="contrasena">Contraseña</string>
+
+    <!-- Menú en action bar -->
+    <string name="actionExportar">Exportar</string>
+    <string name="actionPendientes">Datos pendientes</string>
+
+    <!-- Nodos en Firebase -->
+    <string name="nodoProyectos">proyectos</string>
+    <string name="nodoGenerales">generales</string>
+    <string name="nodoClientes">clientes</string>
+
+    <!-- Campos de los nodos -->
+    <string name="campo_edificioDG">edificio</string>
+    <string name="campo_direccionDG">direccion</string>
+    <string name="campo_localidadDG">localidad</string>
+    <string name="campo_codigoDG">codigopostal</string>
+    <string name="campo_referenciaDG">referencia</string>
+    <string name="campo_fechaConsDG">fechaconstruccion</string>
+    <string name="campo_proyectoDG">proyecto</string>
+
+    <string name="campo_nombreCli">nombrecliente</string>
+    <string name="campo_localidadCli">localidadcliente</string>
+    <string name="campo_telefonoCli">telefonocliente</string>
+    <string name="campo_correoCli">correocliente</string>
+    <string name="campo_proyectoCli">proyectocliente</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Navigation drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="nav_header_title">Energy Notes</string>
+    <string name="nav_header_subtitle">by Tologo</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <!-- Textos generales -->
+    <string name="title_activity_login">Sign in</string>
+    <string name="lblFiltrado">Selecciona un proyecto de la lista</string>
+
+    <!--Títulos de tablas-->
+    <string name="txtDatosGenerales">Introduce la infomación del proyecto elegido</string>
+    <string name="txtDatosCliente">Introduce datos del cliente del proyecto</string>
+
+</resources>
